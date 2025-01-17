@@ -1,0 +1,3 @@
+# Scala Implicit Ordering Resolution Failure
+
+This example demonstrates a common issue when working with implicits and Ordering in Scala. The `MyClass` uses an implicit `Ordering` to compare instances of type `T`. While this works for types with built-in ordering (like `Int`), it fails for types without a predefined `Ordering` (like `String`). The solution shows how to define an implicit `Ordering` for String to make the code work as intended.
